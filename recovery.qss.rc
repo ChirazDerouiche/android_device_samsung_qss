@@ -1,0 +1,8 @@
+import /recovery.rc
+
+on early-init
+    mkdir /tmp 0777 root root
+    symlink /system/etc /etc
+
+on init
+    loglevel 7

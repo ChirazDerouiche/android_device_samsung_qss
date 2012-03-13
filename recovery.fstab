@@ -1,0 +1,14 @@
+# mount point	fstype		device							device2						options
+
+/system		ubifs		ubi:system												parent=/ubi0,partname=system,parttype=8300
+/cache		ext4		/dev/block/platform/s3c-sdhci.0/by-name/cache		/dev/block/platform/s3c-sdhci.0/by-num/p1	parent=/gpt0,partname=cache,parttype=8300,partsize=40960
+/data		ext4		/dev/block/platform/s3c-sdhci.0/by-name/userdata							parent=/gpt0,partname=userdata
+
+/sdcard		vfat		/dev/block/platform/s3c-sdhci.2/by-num/p1
+
+/boot		mtd		boot
+/recovery	mtd		recovery
+/misc		mtd             misc
+/efs		mtd             efs
+/ubi0		ubi		ubi													wipe
+/gpt0		gpt		/dev/block/platform/s3c-sdhci.0/mmcblk0

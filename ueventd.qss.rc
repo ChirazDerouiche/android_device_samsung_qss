@@ -1,0 +1,6 @@
+/dev/pvrsrvkm		0666	system	system
+
+/dev/dpram*		0660	radio	radio
+/dev/ttyCSD*		0660	radio	radio
+/dev/ttyCDMA*		0660	radio	radio
+/dev/ttyTRFB*		0660	radio	radio
