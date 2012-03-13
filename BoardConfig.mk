@@ -38,9 +38,9 @@ TARGET_OTA_NO_RECOVERYIMAGE := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := s5pc110
 TARGET_BOOTLOADER_BOARD_NAME := qss
-TARGET_BOARD_INFO_FILE := device/qss/board-info.txt
+TARGET_BOARD_INFO_FILE := device/samsung/qss/board-info.txt
 
-BOARD_EGL_CFG := device/qss/egl.cfg
+BOARD_EGL_CFG := device/samsung/qss/egl.cfg
 
 # BOARD_USES_HGL := true
 # BOARD_USES_OVERLAY := true

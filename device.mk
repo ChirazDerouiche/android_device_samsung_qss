@@ -20,12 +20,12 @@
 # Everything in this directory will become public
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/qss/kernel
+LOCAL_KERNEL := device/samsung/qss/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-DEVICE_PACKAGE_OVERLAYS := device/qss/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/qss/overlay
 
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
@@ -60,12 +60,12 @@ PRODUCT_COPY_FILES := \
 endif
 
 PRODUCT_COPY_FILES += \
-    device/qss/init.qss.rc:root/init.qss.rc \
-    device/qss/init.qss.usb.rc:root/init.qss.usb.rc \
-    device/qss/ueventd.qss.rc:root/ueventd.qss.rc \
-    device/qss/media_profiles.xml:system/etc/media_profiles.xml \
-    device/qss/gps.conf:system/etc/gps.conf \
-    device/qss/vold.fstab:system/etc/vold.fstab
+    device/samsung/qss/init.qss.rc:root/init.qss.rc \
+    device/samsung/qss/init.qss.usb.rc:root/init.qss.usb.rc \
+    device/samsung/qss/ueventd.qss.rc:root/ueventd.qss.rc \
+    device/samsung/qss/media_profiles.xml:system/etc/media_profiles.xml \
+    device/samsung/qss/gps.conf:system/etc/gps.conf \
+    device/samsung/qss/vold.fstab:system/etc/vold.fstab
 
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_WIFI_MODULE):system/lib/modules/bcmdhd.ko
 endif
 PRODUCT_COPY_FILES += \
-    device/qss/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+    device/samsung/qss/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 PRODUCT_PROPERTY_OVERRIDES := \
     wifi.interface=wlan0 \
@@ -101,16 +101,16 @@ PRODUCT_PACKAGES += \
 
 # Input kl and kcm keymaps
 PRODUCT_COPY_FILES += \
-    device/qss/qss-keypad.kl:system/usr/keylayout/qss-keypad.kl \
-    device/qss/qss-keypad.kcm:system/usr/keychars/qss-keypad.kcm \
-    device/qss/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl \
-    device/qss/cypress-touchkey.kcm:system/usr/keychars/cypress-touchkey.kcm \
-    device/qss/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
-    device/qss/sec_jack.kcm:system/usr/keychars/sec_jack.kcm
+    device/samsung/qss/qss-keypad.kl:system/usr/keylayout/qss-keypad.kl \
+    device/samsung/qss/qss-keypad.kcm:system/usr/keychars/qss-keypad.kcm \
+    device/samsung/qss/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl \
+    device/samsung/qss/cypress-touchkey.kcm:system/usr/keychars/cypress-touchkey.kcm \
+    device/samsung/qss/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
+    device/samsung/qss/sec_jack.kcm:system/usr/keychars/sec_jack.kcm
 
 # Input device calibration files
 PRODUCT_COPY_FILES += \
-    device/qss/mxt224_ts.idc:system/usr/idc/mxt224_ts.idc
+    device/samsung/qss/mxt224_ts.idc:system/usr/idc/mxt224_ts.idc
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
