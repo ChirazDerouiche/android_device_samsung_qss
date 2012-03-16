@@ -110,7 +110,7 @@ PRODUCT_COPY_FILES += \
 
 # Input device calibration files
 PRODUCT_COPY_FILES += \
-    device/samsung/qss/mxt224_ts.idc:system/usr/idc/mxt224_ts.idc
+    device/samsung/qss/qt602240_ts.idc:system/usr/idc/qt602240_ts.idc
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
